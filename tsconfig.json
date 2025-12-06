@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "types": ["cypress", "node"]
+  },
+  "include": ["cypress/**/*.ts", "cypress/**/*.d.ts"]
+}

@@ -1,2 +1,6 @@
 # Cypress
 node_modules/
+logs/
+allure-results/
+allure-report/
+cypress/screenshots/
