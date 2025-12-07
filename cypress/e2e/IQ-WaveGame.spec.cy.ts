@@ -26,21 +26,19 @@ function playGameUntilOver() {
   cy.get('li:contains("HIT")')
     .find('span')
     .then(($el) => {
-      if ($el.length) {
-        const text = $el.text();
-        cy.log(`Clicking on: ${text}`);
-        cy.contains('p', text).parent('div').first().click({ force: true });
+      const text = $el.text();
+      cy.log(`Clicking on: ${text}`);
+      cy.contains('p', text).parent('div').first().click({ force: true });
 
-        cy.get('li:contains("TIMER")')
-          .find('span')
-          .then(($timer) => {
-            const timeLeft = $timer.text();
-            if (Number(timeLeft) === 0) {
-              cy.log('Game Over');
-            } else {
-              playGameUntilOver();
-            }
-          });
-      }
+      cy.get('li:contains("TIMER")')
+        .find('span')
+        .then(($timer) => {
+          const timeLeft = $timer.text();
+          if (Number(timeLeft) === 0) {
+            cy.log('Game Over');
+          } else {
+            playGameUntilOver();
+          }
+        });
     });
 }
