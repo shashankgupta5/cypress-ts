@@ -9,6 +9,7 @@ module.exports = defineConfig({
     },
     specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
     video: false,
+    screenshotOnRunFailure: true,
   },
   watchForFileChanges: false,
 });

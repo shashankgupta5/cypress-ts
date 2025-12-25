@@ -4,3 +4,5 @@ logs/
 allure-results/
 allure-report/
 cypress/screenshots/
+runner-results/
+cypress/parallel-weights.json
