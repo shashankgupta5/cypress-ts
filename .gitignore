@@ -6,3 +6,4 @@ allure-report/
 cypress/screenshots/
 runner-results/
 cypress/parallel-weights.json
+multi-reporter-config.json
